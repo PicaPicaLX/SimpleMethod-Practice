@@ -9,7 +9,13 @@ namespace SimpleMethod_Practice
     class Program
     {
         static void Main(string[] args)
+        {          
+        }
+
+
+        private static void HelloWorld()
         {
+
         }
     }
 }
