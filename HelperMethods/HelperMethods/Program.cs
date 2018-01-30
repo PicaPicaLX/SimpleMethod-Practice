@@ -50,14 +50,22 @@ namespace HelperMethods
             Console.WriteLine("Results: " + result);
             */
             Console.Write("Results: ");  // 显示"Resultes:"，然后再
-            /*
+
             string reversedFirstName = ReverseString(firstName); // 调用下面的自定义方法"ReverseString",对变量"firstName"j
             string reversedLastName = ReverseString(lastName); // ~
             string reversedCity = ReverseString(city); // ~
-            */
-            DisplayResult(ReverseString(firstName), ReverseString(lastName), ReverseString(city));
-            Console.ReadLine();
 
+            DisplayResult(ReverseString(firstName), 
+                ReverseString(lastName), 
+                ReverseString(city));
+
+            Console.WriteLine();
+           
+            DisplayResult(ReverseString(firstName)+ " " 
+                + ReverseString(lastName) + " " 
+                + ReverseString(city));
+
+            Console.ReadLine();
         }
 
 
@@ -74,6 +82,12 @@ namespace HelperMethods
                 reversedFirstName,
                 reversedLastName,
                 reversedCity));
+        }
+
+        private static void DisplayResult(string message)
+        {
+            Console.Write("Result:");
+            Console.Write(message);
         }
 
 
